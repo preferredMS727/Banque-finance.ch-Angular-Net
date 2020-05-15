@@ -36,4 +36,24 @@
             background-color: #d18c5d;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        .leftPanel {
+            padding: 16px;;
+        }
+
+        .rightPanel {
+            margin-top: 32px;
+
+            .textArea {
+                h3 {
+                    font-size: 13px;
+                }
+
+                h4 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
