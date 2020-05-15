@@ -19,40 +19,40 @@
         height: 100%;
 
         .rightPanel {
-            // width: 100%;
-            // margin: 86px;
+            width: 100%;
+            padding: 0 86px;
 
-            // .focus {
-            //     background-color: #858585;
-            //     height: 2em;
-            //     width: 92px;
-            //     opacity: 50%;
-            //     color: white;
-            // }
+            .focus {
+                background-color: #858585;
+                height: 2em;
+                width: 92px;
+                opacity: 50%;
+                color: white;
+            }
 
-            // .redLine {
-            //     // border-top: 4px solid red;
-            //     opacity: 50%;
-            // }
+            .redLine {
+                border-top: 5px solid red;
+                opacity: 50%;
+            }
 
-            // .title {
-            //     border-bottom: 2px solid #e1e1e1;
-            // }
+            .title {
+                border-bottom: 2px solid #e1e1e1;
+            }
 
-            // .scrollButton {
-            //     justify-content: left;
-            //     display: flex;
-            //     color: #ff7200;
-            //     font-size: 36px;
-            //     margin: 32px 0;
-            //     padding: 0;
-            //     border: 0;
-            //     background: transparent;
-            // }
+            .scrollButton {
+                justify-content: left;
+                display: flex;
+                color: #ff7200;
+                font-size: 36px;
+                margin: 32px 0;
+                padding: 0;
+                border: 0;
+                background: transparent;
+            }
 
-            // .scrollText {
-            //     max-height: 400px;
-            // }
+            .scrollText {
+                max-height: 400px;
+            }
         }
     }
 
