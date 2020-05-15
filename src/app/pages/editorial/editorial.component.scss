@@ -1,5 +1,6 @@
 .container-fluid {
-
+    margin-bottom: 58px;
+    
     .avatar {
         vertical-align: middle;
         border-radius: 50%;
@@ -46,12 +47,18 @@
             margin-top: 32px;
 
             .textArea {
-                h3 {
-                    font-size: 13px;
-                }
+                .title {
+                    margin-top: 8px !important;
 
-                h4 {
-                    font-size: 12px;
+                    h3 {
+                        font-size: 13px;
+                        margin-bottom: 4px;
+                    }
+    
+                    h4 {
+                        font-size: 12px;
+                        margin-bottom: 4px;
+                    }
                 }
             }
         }
