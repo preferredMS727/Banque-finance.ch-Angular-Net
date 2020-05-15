@@ -1,13 +1,21 @@
 <div class="footer pos-f-t">
-    <div class="collapse" id="navbarToggleExternalContent">
+    <div #tref class="collapse" id="navbarToggleExternalContent" (clickElsewhere)="closeDropdown()">
         <div class="bg-light p-4">
+            <div class="mobileNavHeader">
+                <div class="d-flex justify-content-end">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">X</button>
+                </div>
+                <img class="logoImg" src="assets/images/logo.jpg">
+            </div>
             <div class="row">
-                <div *ngFor="let cardItem of cardItems" class="col-3">
+                <div *ngFor="let cardItem of cardItems" class="col-md-3 col-sm-12">
                     <div class="card m-3">
                         <div class="row no-gutters">
-                            <div class="col-sm-3 bg-dark">
+                            <div class="col-3 bg-dark">
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <div class="card-body">
                                     <p class="card-text text-left text-dark">
                                         {{ cardItem.text }}
@@ -16,15 +24,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div *ngFor="let cardItem of cardItems" class="col-3">
                     <div class="card m-3">
                         <div class="row no-gutters">
-                            <div class="col-sm-3 bg-warning">
+                            <div class="col-3 bg-warning">
                             </div>
-                            <div class="col-sm-9">
+                            <div class="col-9">
                                 <div class="card-body">
                                     <p class="card-text text-left text-dark">
                                         {{ cardItem.text }}
@@ -37,11 +41,14 @@
             </div>
         </div>
     </div>
+    <!-- <div class="collapse" id="navbarFooterIconToggle">
+        <p>test</p>
+    </div> -->
     <nav class="navbar navbar-light bg-light">
-        <div class="d-flex justify-content-start">
+        <div class="footerLogo d-flex justify-content-start">
             <img class="logoImg" src="assets/images/logo.jpg">
         </div>
-        <div class="d-flex justify-content-center fixed-bottom mb-2">
+        <div class="d-flex justify-content-center">
             <button class="navbar-toggler">
                 <svg class="bi bi-chevron-left" width="1em" height="1em" viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
@@ -64,13 +71,20 @@
                 </svg>
             </button>
         </div>
-        <div class="d-flex justify-content-end">
-            <button class="navbar-toggler">
-                <img class="retate90" src="https://img.icons8.com/material-rounded/24/000000/view-module.png" />
+        <div class="right d-flex justify-content-end">
+            <button class="navbar-toggler mobileIcon" type="button" data-toggle="collapse"
+                data-target="#navbarFooterIconToggle" aria-controls="navbarFooterIconToggle" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="navbar-toggler">
-                <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
-            </button>
+            <div class="webIcon">
+                <button class="navbar-toggler">
+                    <img class="retate90" src="https://img.icons8.com/material-rounded/24/000000/view-module.png" />
+                </button>
+                <button class="navbar-toggler">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
+                </button>
+            </div>
         </div>
     </nav>
 </div>

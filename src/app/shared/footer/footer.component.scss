@@ -12,6 +12,7 @@
 
     button {
         border: 0;
+        cursor: pointer;
 
         svg {
             font-size: 34px;
@@ -26,5 +27,44 @@
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        .collapse {
+            max-height: 93vh;
+            overflow: auto;
+
+            .card-body {
+                padding: 0.5rem;
+
+                .card-text {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        .footerLogo {
+            .logoImg {
+                display: none !important;
+            }
+        }
+    
+        .right {
+            .webIcon {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mobileIcon {
+        display: none;
+    }
+
+    .mobileNavHeader {
+        display: none !important;
     }
 }
