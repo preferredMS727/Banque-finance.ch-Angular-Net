@@ -1,0 +1,39 @@
+.container-fluid {
+
+    .avatar {
+        // vertical-align: middle;
+        // border-radius: 50%;
+    }
+
+    .leftPanel {
+        padding: 64px;
+
+        .tab {
+            background-color: #858585;
+            height: 2em;
+            display: inline-block;
+            color: white;
+        }
+
+        .redLine {
+            border-top: 5px solid red;
+        }
+
+        .author {
+            display: inline-block;
+        }
+
+    }
+
+    .rightPanel {
+        margin-top: 100px;
+
+        img {
+            width: 100%;
+        }
+
+        .textArea {
+            background-color: #d18c5d;
+        }
+    }
+}

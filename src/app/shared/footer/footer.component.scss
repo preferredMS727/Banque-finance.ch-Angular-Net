@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    .logoImg {
+        height: 40px;
+    }
+
+    button {
+        border: 0;
+
+        svg {
+            font-size: 34px;
+            display: flex;
+            align-self: center;
+        }
+
+        .retate90 {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+}
