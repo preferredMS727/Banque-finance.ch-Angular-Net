@@ -10,6 +10,11 @@
         height: 40px;
     }
 
+    .footer-center {
+        width: calc(100% - 32px);
+        position: absolute;
+    }
+
     button {
         border: 0;
         cursor: pointer;
