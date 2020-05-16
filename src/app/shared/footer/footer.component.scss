@@ -6,15 +6,6 @@
     color: white;
     text-align: center;
 
-    .logoImg {
-        height: 40px;
-    }
-
-    .footer-center {
-        width: calc(100% - 32px);
-        position: absolute;
-    }
-
     button {
         border: 0;
         cursor: pointer;
@@ -25,12 +16,51 @@
             align-self: center;
         }
 
-        .retate90 {
+        .rotate90 {
             -webkit-transform: rotate(90deg);
             -moz-transform: rotate(90deg);
             -o-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
+        }
+
+        .rotate360 {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    .logoImg {
+        height: 40px;
+    }
+
+    .footer-center {
+        width: 100%;
+        position: absolute;
+        border-top: 1px solid darkgray;
+
+        button {
+            border-left: 1px solid;
+            border-radius: 0;
+            border-right: 1px solid;
+        }
+    }
+
+    .right {
+        .customDromUpButton {
+            padding: 0;
+            background-color: transparent;
+            border-radius: 2px;
+        }
+
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid darkgray;
+            width: calc(50vw + 64px);
         }
     }
 }
@@ -38,7 +68,7 @@
 @media only screen and (max-width: 600px) {
     .footer {
         .collapse {
-            max-height: 93vh;
+            max-height: 95vh;
             overflow: auto;
 
             .card-body {

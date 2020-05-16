@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { $ } from 'protractor';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-footer',
